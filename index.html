@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Pan - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">HARRY PAN</h1>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#merch" class="nav-link">Merch Shop</a></li>
+                <li><a href="#different" class="nav-link">Different</a></li>
+                <li><a href="#journal" class="nav-link">Journal</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">HARRY PAN</h1>
+            <p class="hero-subtitle">7th Grade Gaming Legend | Football Player | Basketball Enthusiast | Game Developer</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Learn More About Me</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hey! I'm Harry Pan, a 7th grader who loves gaming, sports, and building cool stuff with code. I'm passionate about exploring new technologies, especially AI, and I'm always looking for the next challenge.</p>
+                <p><strong>🎓 Proud Achievement:</strong> I got 4 A's in school! That's something I'm really proud of.</p>
+                <p>I'm constantly learning and pushing myself to be better at everything I do. Whether it's gaming, basketball, or coding, I bring the same energy and dedication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS SECTION -->
+    <section id="interests" class="section">
+        <div class="container">
+            <h2 class="section-title">My Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Competitive games, exploring new worlds, speedrunning</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🏈</div>
+                    <h3>Football</h3>
+                    <p>Tackle Football with Bellevue Jr Wolverines - Bringing the heat every game!</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🏀</div>
+                    <h3>Basketball</h3>
+                    <p>Playing with Coach Nate Galgalo - Always working to level up my game</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🏊</div>
+                    <h3>Swimming</h3>
+                    <p>Getting faster, stronger, and more competitive in the water</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>🎮 Gemini Game</h3>
+                    <p>Built a nice game using Gemini AI. This project showcases my ability to combine creativity with modern AI technology to create interactive experiences.</p>
+                    <span class="project-tag">AI</span>
+                    <span class="project-tag">Gaming</span>
+                </div>
+                <div class="project-card">
+                    <h3>🏈 Football Journey</h3>
+                    <p>Playing tackle football with the Bellevue Jr Wolverines - competitive sports at its finest!</p>
+                    <span class="project-tag">Sports</span>
+                    <span class="project-tag">Team</span>
+                </div>
+                <div class="project-card">
+                    <h3>🏀 Basketball Training</h3>
+                    <p>Training with Coach Nate Galgalo to improve my basketball skills and game IQ</p>
+                    <span class="project-tag">Sports</span>
+                    <span class="project-tag">Training</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAKE MERCH SHOP SECTION -->
+    <section id="merch" class="section merch-section">
+        <div class="container">
+            <h2 class="section-title">🛒 Harry Pan Merch Shop (JOKE SHOP - Can't Actually Buy!)</h2>
+            <p class="merch-disclaimer">⚠️ WARNING: This is a fake merch shop for entertainment purposes only. You cannot actually purchase anything here. It's all a joke! 😂</p>
+            <div class="merch-grid">
+                <div class="merch-card">
+                    <div class="merch-image ai-hoodie-1"></div>
+                    <h3>Harry Hoodie v1.0</h3>
+                    <p>Premium "AI-Generated" black hoodie with gamer vibes. (Definitely not generated by AI)</p>
+                    <p class="price">$9,999.99</p>
+                    <button class="merch-button" onclick="fakePurchase('Harry Hoodie v1.0')">❌ CANNOT BUY (Out of Stock Forever)</button>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-image ai-hoodie-2"></div>
+                    <h3>Harry Hoodie v2.0</h3>
+                    <p>Super exclusive hoodie with holographic gaming logo. Limited to 0 copies.</p>
+                    <p class="price">$15,000.00</p>
+                    <button class="merch-button" onclick="fakePurchase('Harry Hoodie v2.0')">❌ CANNOT BUY (Time Paradox)</button>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-image ai-hoodie-3"></div>
+                    <h3>Gaming Legend Cap</h3>
+                    <p>Baseball cap with "Harry Pan - 7th Grade GOAT" embroidered. (Not actually embroidered)</p>
+                    <p class="price">$5,000.00</p>
+                    <button class="merch-button" onclick="fakePurchase('Gaming Legend Cap')">❌ CANNOT BUY (Lost in Void)</button>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-image ai-hoodie-4"></div>
+                    <h3>Football Champion Jersey</h3>
+                    <p>Fake Bellevue Jr Wolverines jersey with AI-generated design. 100% not real.</p>
+                    <p class="price">$8,888.88</p>
+                    <button class="merch-button" onclick="fakePurchase('Football Champion Jersey')">❌ CANNOT BUY (Exists in Another Dimension)</button>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-image ai-hoodie-5"></div>
+                    <h3>Gamer Water Bottle</h3>
+                    <p>Stay hydrated with this fake merchandise water bottle. (Contains actual nothing)</p>
+                    <p class="price">$3,000.00</p>
+                    <button class="merch-button" onclick="fakePurchase('Gamer Water Bottle')">❌ CANNOT BUY (Imaginary Item)</button>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-image ai-hoodie-6"></div>
+                    <h3>Basketball Legend Socks</h3>
+                    <p>Legendary socks with Coach Nate's signature. (Signature not real)</p>
+                    <p class="price">$2,500.00</p>
+                    <button class="merch-button" onclick="fakePurchase('Basketball Legend Socks')">❌ CANNOT BUY (Sold Out Since 1985)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFERENT SECTION (WITH JUMPSCARES) -->
+    <section id="different" class="section different-section">
+        <div class="container">
+            <h2 class="section-title">🎪 Different Website</h2>
+            <p>Welcome to the DIFFERENT section. Click the button below if you DARE... 👻</p>
+            <button class="jumpscare-button" onclick="triggerJumpscare()">⚠️ CLICK IF YOU DARE ⚠️</button>
+            <div id="jumpscare-container" class="jumpscare-hidden">
+                <div class="jumpscare-overlay"></div>
+                <div class="jumpscare-content">
+                    <h1 class="jumpscare-text">TUNG TUNG TUNG SAHURS! 👻</h1>
+                    <button onclick="closeJumpscare()" class="close-jumpscare">Close (if you can! 😂)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING JOURNAL SECTION -->
+    <section id="journal" class="section">
+        <div class="container">
+            <h2 class="section-title">📚 Learning Journal</h2>
+            <div class="journal-content">
+                <div class="journal-entry">
+                    <h3>Current Learning Goals</h3>
+                    <ul>
+                        <li>✅ Improve my basketball game with Coach Nate Galgalo</li>
+                        <li>✅ Learn about ragebaiting and digital culture</li>
+                        <li>✅ Get better at game development with AI tools</li>
+                        <li>✅ Master new gaming techniques and strategies</li>
+                        <li>✅ Keep crushing it in school (targeting more A's!)</li>
+                    </ul>
+                </div>
+                <div class="journal-entry">
+                    <h3>What I Want to Learn Next</h3>
+                    <p>I want to learn more about <strong>ragebaiting</strong> and digital culture. I'm also super focused on becoming a better basketball player and understanding what makes content go viral online. Plus, I want to keep leveling up my coding and AI skills!</p>
+                </div>
+                <div class="journal-entry">
+                    <h3>Recent Achievements</h3>
+                    <p>🏆 <strong>Got 4 A's in school!</strong> This is something I'm really proud of. It shows that with dedication and hard work, you can achieve anything you set your mind to.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">📞 Contact & Links</h2>
+            <div class="contact-content">
+                <p>Want to connect or chat? Feel free to reach out!</p>
+                <div class="contact-buttons">
+                    <button class="contact-button" onclick="alert('Email: harrypan@example.com (This is a demo)')">📧 Email Me</button>
+                    <button class="contact-button" onclick="alert('Discord: HarryPan#1234 (Demo)')">💬 Discord</button>
+                    <button class="contact-button" onclick="alert('Instagram: @harrypan (Demo)')">📸 Instagram</button>
+                    <button class="contact-button" onclick="alert('GitHub: github.com/7rgmfvhp6d-crypto (Demo)')">💻 GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Harry Pan - All Rights Reserved | Built with HTML, CSS & JavaScript</p>
+        <p>🎮 Gaming | 🏈 Football | 🏀 Basketball | 🏊 Swimming | 💻 Coding</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
