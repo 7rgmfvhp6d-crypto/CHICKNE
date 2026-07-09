@@ -17,6 +17,7 @@ function triggerJumpscare() {
     
     // Show the jumpscare
     jumpscareContainer.classList.remove('jumpscare-hidden');
+    jumpscareContainer.style.display = 'block';
     
     // Play a sound effect (optional - uses browser beep)
     playJumpscareSounds();
@@ -29,6 +30,7 @@ function triggerJumpscare() {
 function closeJumpscare() {
     const jumpscareContainer = document.getElementById('jumpscare-container');
     jumpscareContainer.classList.add('jumpscare-hidden');
+    jumpscareContainer.style.display = 'none';
 }
 
 // Function 4: Make screen shake when jumpscare appears
